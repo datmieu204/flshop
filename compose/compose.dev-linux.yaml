@@ -1,0 +1,16 @@
+services:
+  app:
+    volumes: &appvolumes
+      - ./src/nginx.conf.sample:/var/www/html/nginx.conf:cached
+      - ./src:/var/www/html:cached
+
+  phpfpm:
+    volumes: *appvolumes    
+    
+  phpmyadmin:
+    image: linuxserver/phpmyadmin
+    env_file: env/db.env
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
