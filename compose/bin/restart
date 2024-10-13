@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-bin/stop "$@"
-bin/start "$@"
