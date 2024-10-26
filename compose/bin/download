@@ -35,7 +35,7 @@ else
 fi
 
 if [ $? != 0 ]; then
-    echo -e "${BLUE}Please check the installation guide at ${YELLOW}https://github.com/markshust/docker-magento#install-fails-because-project-directory-is-not-empty${BLUE} for troubleshooting.${NC}"
+    echo -e "${BLUE}Please check the installation guide at ${YELLOW}https://github.com/datmieu204/flshop#install-fails-because-project-directory-is-not-empty${BLUE} for troubleshooting.${NC}"
 else
     bin/clinotty [ ! -f "./var/composer_home/auth.json" ] && bin/clinotty mkdir -p ./var/composer_home && bin/clinotty cp /var/www/.composer/auth.json ./var/composer_home/auth.json
 fi
