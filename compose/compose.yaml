@@ -4,7 +4,7 @@
 
 services:
   app:
-    image: hungisworking/flshop-magento-nginx:lastest
+    image: markoshust/magento-nginx:1.24-0
     ports:
       - "80:8000"
       - "443:8443"
