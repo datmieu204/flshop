@@ -80,12 +80,12 @@ services:
     ports:
       - "1080:1080"
 
-  ## Cloudflare tunnel support, uncomment to enable
-  #tunnel:
-  #  container_name: cloudflared-tunnel
-  #  image: cloudflare/cloudflared:latest
-  #  command: tunnel run
-  #  env_file: env/cloudflare.env
+  # Cloudflare tunnel support, uncomment to enable
+  tunnel:
+   container_name: cloudflared-tunnel
+   image: cloudflare/cloudflared:latest
+   command: tunnel run
+   env_file: env/cloudflare.env
 
   ## Blackfire support, uncomment to enable
   #blackfire:
