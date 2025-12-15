@@ -1,2 +1,2 @@
 # flshop enviroment
-Môi trường cài đặt Magento2 qua Docker
+The environmental setting Magento2 via Docker
